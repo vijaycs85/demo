@@ -1,0 +1,76 @@
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 60px 70px;
+    padding: 0;
+}
+.wrapper {
+    display: flex;
+    flex-direction: row;
+}
+.bar-container {
+    width: 50%;
+    display: flex;
+    height: 100vh; /* Full height */
+}
+.text-container {
+    display: flex;
+    flex-direction: column;
+}
+.vertical-text {
+    writing-mode: vertical-lr; /* vertical right to left */
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+.title {
+    vertical-align: middle;
+    text-align: left;
+    font-weight: bold;
+    font-size: 6rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.description {
+    display: inline-block;
+    margin: -10px 0 0 20px;
+    width: 250px;
+}
+.bar {
+    flex: 1;
+    background-color: rgb(209, 64, 50);
+    margin: 0 10px; /* Optional spacing between bars */
+}
+.footer-container {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+}
+.event-header {
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.event-date span {
+    color: rgb(209, 64, 50);
+}
+
+.event-time {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.event-location {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.event-description {
+    font-size: 0.9rem;
+    margin-top: 5px;
+    color: #000;
+}
